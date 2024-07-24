@@ -12,6 +12,6 @@ export class RecommendationComponent {
     this.router.navigate(['/recommend']);
   }
   NavigateToFavorite() {
-    this.router.navigate(['/favorite']);
+    this.router.navigate(['/favourite']);
   }
 }
