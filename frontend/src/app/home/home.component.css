@@ -7,25 +7,25 @@
     background-size: 100%;
     background-attachment: fixed;
   }
-  
+
   h1 {
     color: aliceblue;
     font-size: 100px;
     margin-top: 100px;
     margin-left: 100px;
-  
+
   }
-  
+
   .displace {
     margin-top: -20%;
     margin-left: 150px;
   }
-  
+
   p {
     max-width: 400px;
-  
+
   }
-  
+
   .form {
     height: 450px;
     width: 350px;
@@ -33,19 +33,19 @@
     padding-left: 20px;
     padding-top: 10px;
     margin-left: 70%;
-    margin-top: -10%;
+    margin-top: 0%;
     border-radius: 5%;
   }
-  
+
   .sign {
     padding-left: 35%;
   }
-  
+
   .line {
     width: 270px;
     margin-left: 30px;
   }
-  
+
   input[type="password"],
   [type="email"],
   [type="text"] {
@@ -54,7 +54,7 @@
     border-radius: 5px;
     border-color: whitesmoke;
   }
-  
+
   button {
     margin-top: 20px;
     width: 320px;
@@ -63,21 +63,21 @@
     background-color: rgb(87, 87, 241);
     color: white;
   }
-  
+
   button:hover {
     opacity: 80%;
   }
-  
-  .New {
+
+  .enter {
     font-size: 18px;
-    margin-left: 38%;
+    margin-left: 25%;
+    margin-bottom: 20px;
   }
-  
+
   a {
     color: blue;
   }
-  
+
   a:hover {
     color: black;
   }
-  
