@@ -1,6 +1,6 @@
 <div class="back">
     <h1>Sound Sage</h1>
-    <form class="form" action="#">
+    <form class="form" (ngSubmit)="onSignUp()">
         <h2 class="sign">Sign Up</h2>
         <hr class="line">
         <p>User Name</p>
@@ -11,7 +11,7 @@
         <p>Password</p>
         <input type="password" name="Password" [(ngModel)] = "SignUpObj.password" required placeholder="password">
         <br />
-        <button (click)="onSignUp()" >Submit</button>
+        <button type="submit" >Submit</button>
         <br />
         <a routerLink="/login" class="enter">Already have an email</a>
     </form>

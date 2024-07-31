@@ -17,7 +17,7 @@ export class HomeComponent {
     this.SignUpObj = new SignUp();
   }
   onSignUp() {
-    this.http.post('http://localhost:8080/', this.SignUpObj).subscribe((res:any)=>{
+    this.http.post('http://127.0.0.1:8080/signup', this.SignUpObj).subscribe((res:any)=>{
       if(res.result) {
         alert("sign up success")
         this.router.navigate(['/login']);

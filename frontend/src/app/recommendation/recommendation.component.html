@@ -4,11 +4,11 @@
       <hr class="line">
     </div>
     <h1 class="space"></h1>
-    <form class="recommend">
+    <form class="recommend" (ngSubmit)="onRecommendation()">
       <h4>First:</h4>
       <p>Please select your favorite type of music</p>
       <label for="genre"></label>
-      <select id="genre" name="genre">
+      <select id="genre" name="genre" [(ngModel)]="RecommendationObj.genres" required>
           <option value="" disabled selected hidden>Type of music</option>
           <option value="Pop">Pop</option>
           <option value="Rock">Rock</option>
@@ -36,7 +36,7 @@
       <h4>Second:</h4>
       <p>Please select the Language</p>
       <label for="language"></label>
-      <select id="language" name="language">
+      <select id="language" name="language" [(ngModel)]="RecommendationObj.language" required>
           <option value="" disabled selected hidden>Language</option>
           <option value="en">English</option>
           <option value="ar">Arabic</option>
@@ -48,7 +48,7 @@
           <option value="ko">Korean</option>
       </select>
       <br />
-      <button (click)="NavigateToRecommend()" class="submit">Recommend a song</button>
+      <button class="submit">Recommend a song</button>
     </form>
     <div class="result">
       <div class="vertical-line"></div>
@@ -58,10 +58,7 @@
       <div class="buttons">
           <button id="addToFavorites">Add to Favorite List</button>
           <br />
-          <button (click)="NavigateToRecommend()" id="retakeTest">Take the Test Again</button>
-          <br />
           <button (click)="NavigateToFavorite()" id="goToFavorites">Go to Favorite List</button>
       </div>
     </div>
     </div>
-    

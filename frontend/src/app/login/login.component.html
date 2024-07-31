@@ -1,6 +1,6 @@
 <div class="back">
     <h1>Sound Sage</h1>
-    <form class="form">
+    <form class="form" (ngSubmit)="onLogin()">
       <h2 class="sign">Sign In</h2>
       <hr class="line">
       <p>User Name</p>
@@ -9,7 +9,7 @@
       <p>Password</p>
       <input type="password" name="Password" placeholder="password">
       <br />
-      <button (click)="onLogin()">Submit</button>
+      <button type="submit">Submit</button>
       <br />
       <h1></h1>
       <a routerLink="/" class="New">New User</a>

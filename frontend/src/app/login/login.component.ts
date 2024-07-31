@@ -20,7 +20,7 @@ export class LoginComponent {
     this.http.post('http://localhost:8080/', this.LoginObj).subscribe((res:any)=>{
       if(res.result) {
         alert("Log in success")
-        this.router.navigate(['/recommend']);
+        this.router.navigate(['/recommendation']);
       } else {
         alert(res.message)
       }

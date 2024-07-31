@@ -20,7 +20,7 @@ exports.signUp = catchAsync(async (req, res, next) => {
 });
 
 exports.logIn = catchAsync(async (req, res, next) => {
-    pool.query(`SELECT * FROM users WHERE email = \`` + req.query.email + `\`;`, (err, result, fields) => {
+    pool.query(`SELECT * FROM users WHERE email = \'` + req.query.email + `\';`, (err, result, fields) => {
         if (err) {
             res.status(400).json(err);
         } else if (result.length === 0 || result[0].password != req.query.password) {
